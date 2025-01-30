@@ -1,0 +1,5 @@
+<input type="file" (change)="onFileSelected($event)" accept=".csv"/>
+<button (click)="uploadFile()">Subir</button>
+
+<!-- ✅ Mostrar el contenido del CSV en JSON -->
+<pre>{{ csvData | json }}</pre>
